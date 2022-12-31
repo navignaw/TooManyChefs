@@ -20,7 +20,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.6.5",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.5.0",
-    "babelify": "^7.2.0",
+    "babelify": "^10.0.0",
     "browserify": "^13.0.0",
     "react-addons-perf": "~15.0.1",
     "uglify": "^0.1.5",
