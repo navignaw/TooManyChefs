@@ -6,7 +6,7 @@
     "chroma-js": "~1.1.1",
     "classnames": "~2.2.3",
     "firebase": "^3.0.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "rc-progress": "~1.0.4",
     "react": "~15.0.1",
     "react-addons-css-transition-group": "~15.0.1",
