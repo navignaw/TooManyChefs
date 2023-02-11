@@ -110,7 +110,7 @@ var Game = React.createClass({
       : meal.recipes;
 
     // Send Google Analytics event
-    ga('send', 'event', 'Game', 'play', meal.name);
+    gtag('event', 'play_game', { recipe: meal.name });
 
     // Wait a random amount of time before loading (7-9s)
     this.setTimeout(() => {
@@ -203,7 +203,7 @@ var Game = React.createClass({
     if (!canSave) {
       // Send Google Analytics event
       Audio.stopAllSounds();
-      ga('send', 'event', 'Game', 'lose', Recipes[this.state.meal].name);
+      gtag('event', 'lose_game', { recipe: Recipes[this.state.meal].name });
       Audio.playSE('failure');
       this.setState({gameOver: true});
     }
@@ -232,7 +232,10 @@ var Game = React.createClass({
     if (completed === this.state.chefs.length) {
       // Send Google Analytics event
       Audio.stopAllSounds();
-      ga('send', 'event', 'Game', 'win', Recipes[this.state.meal].name, record);
+      gtag('event', 'win_game', {
+        recipe: Recipes[this.state.meal].name,
+        record: record,
+      });
       this.saveData();
       return <p>Type <Inst onComplete={this.onReport}>report</Inst> to view your results.</p>;
     }
