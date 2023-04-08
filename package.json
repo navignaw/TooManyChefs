@@ -17,9 +17,9 @@
     "string.prototype.matchall": "^4.0.2"
   },
   "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.6.5",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
     "babelify": "^10.0.0",
     "browserify": "^13.0.0",
     "react-addons-perf": "~15.0.1",
@@ -33,8 +33,8 @@
   },
   "babel": {
     "presets": [
-      "env",
-      "react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ],
     "plugins": [
       "transform-object-rest-spread"

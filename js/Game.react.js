@@ -21,7 +21,7 @@ var Recipes = require('./recipes/Recipes.js');
 var Volume = require('./Volume.react.js');
 
 
-var VERSION = 'version 1.1.2'
+var VERSION = 'version 1.1.3'
 var VERSION_CHANGELOG = 'https://toomanychefs-game.tumblr.com/post/614597271932256256/'
 
 var Game = React.createClass({
