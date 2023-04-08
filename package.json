@@ -5,7 +5,7 @@
     "bootstrap": "^3.4.1",
     "chroma-js": "~1.1.1",
     "classnames": "~2.2.3",
-    "firebase": "^3.0.3",
+    "firebase": "^9.19.1",
     "lodash": "^4.17.21",
     "rc-progress": "~1.0.4",
     "react": "~15.0.1",
